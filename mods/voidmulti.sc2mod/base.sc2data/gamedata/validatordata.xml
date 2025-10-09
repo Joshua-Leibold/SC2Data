@@ -1054,8 +1054,9 @@
         <Value value="2"/>
     </CValidatorUnitCompareVital>
     <CValidatorCombine id="ConsumePeriodicCheck">
+        <Type value="And"/>
         <CombineArray value="TargetNotDeadAndCasterNotDeadAndEnergyNotFullCaster"/>
-        <CombineArray value="LifeGT2"/>
+        <CombineArray value="LifeGT7p5"/>
     </CValidatorCombine>
     <CValidatorUnitMover id="ReaperKD8KnockbackNotInMotion">
         <Value value="UnitKnockbackMover3"/>
@@ -1071,4 +1072,8 @@
     <CValidatorUnitType id="IsLurkerUnBurrowed">
         <Value value="LurkerMP"/>
     </CValidatorUnitType>
+    <CValidatorUnitCompareVital id="LifeGT7p5">
+        <Compare value="GT"/>
+        <Value value="7.5"/>
+    </CValidatorUnitCompareVital>
 </Catalog>

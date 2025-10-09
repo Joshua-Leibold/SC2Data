@@ -788,13 +788,9 @@
         <On Terms="Effect.PunisherGrenadesLMRight.Start; At Caster; ValidateEffect PunisherGrenadesResearched" Send="Create"/>
     </CActorAction>
     <CActorUnit id="Mothership">
-        <On index="68" Send="SetScale 0.900000 0.400000"/>
-        <On index="73" Send="SetScale 0.900000 0.500000"/>
-        <On index="83" Send="SetScale 0.900000 0.500000"/>
         <On Terms="Behavior.MothershipOffensiveMode.On" Send="SetTintColor {0,0,255 2.000000} 1.000000"/>
         <On Terms="Behavior.MothershipOffensiveMode.On" Send="ClearTintColor 1.000000"/>
         <On Terms="Abil.NexusMassRecall.SourceCastStart" Send="$Spell"/>
-        <TerrainSquibs index="0" RangeDown="5.750000"/>
     </CActorUnit>
     <CActorUnit id="MothershipCore">
         <On Terms="Behavior.MothershipCoreOffensiveMode.On" Send="SetTintColor {0,255,255 2.000000} 1.000000"/>
@@ -2895,4 +2891,21 @@
         <RollInArc value="27.500000"/>
         <RollOutDuration value="0.150000"/>
     </CActorSiteOpBankerUnit>
+    <CActorSound id="HighTemplarPsiStormSound2" parent="SoundContinuous">
+        <On Terms="Effect.PsiStormPersistent.Start" Send="Create"/>
+        <On Terms="Effect.PsiStormPersistent.Stop" Send="Destroy"/>
+        <On Terms="ActorCreation" Send="SoundSetPaused 1"/>
+        <On Terms="ActorCreation" Send="SoundSetOffset 750"/>
+        <On Terms="ActorCreation; GameSpeed GE Normal" Send="TimerSet 3.250000 ResumeSound"/>
+        <On Terms="ActorCreation; GameSpeed LT Normal" Send="TimerSet 2.000000 ResumeSound"/>
+        <On Terms="TimerExpired; TimerName ResumeSound" Send="SoundSetPaused"/>
+        <HostSiteOps Ops="SOpShadow"/>
+        <Sound value="HighTemplar_PsionicStormLaunch2"/>
+    </CActorSound>
+    <CActorModel id="HighTemplarPsiStormModel">
+        <Scale value="1.170000,1.170000,1.200000"/>
+    </CActorModel>
+    <CActorAction id="GhostEMPAttack">
+        <ShieldFlashType value="Full"/>
+    </CActorAction>
 </Catalog>

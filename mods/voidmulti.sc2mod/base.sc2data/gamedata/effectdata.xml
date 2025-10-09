@@ -364,10 +364,10 @@
         <ValidatorArray value="ZealotAttackDamageMaxRange"/>
     </CEffectDamage>
     <CEffectDamage id="PsiStormDamage">
-        <Amount value="8.75"/>
+        <Amount value="6.85"/>
     </CEffectDamage>
     <CEffectDamage id="PsiStormDamageInitial">
-        <Amount value="8.75"/>
+        <Amount value="6.85"/>
     </CEffectDamage>
     <CEffectCreatePersistent id="PsiStormPersistent">
         <PeriodCount value="14"/>

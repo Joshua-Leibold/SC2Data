@@ -492,14 +492,6 @@
     <CRequirementNot id="NotCountUpgradeFrenzyQueuedOrBetterTechTreeCheat">
         <OperandArray index="0" value="CountUpgradeFrenzyQueuedOrBetterTechTreeCheat"/>
     </CRequirementNot>
-    <CRequirementAnd id="AndNotCountUnitBarracksReactorQueuedOnlyAtUnitNotCountUnitFactoryReactorQueuedOnlyAtUnitNotCountUnitStarportReactorQueuedOnlyAtUnit">
-        <OperandArray value="NotCountUnitBarracksReactorQueuedOnlyAtUnit"/>
-        <OperandArray value="NotCountUnitBarracksTechlabQueuedOnlyAtUnit"/>
-        <OperandArray value="NotCountUnitFactoryReactorQueuedOnlyAtUnit"/>
-        <OperandArray value="NotCountUnitFactoryTechlabQueuedOnlyAtUnit"/>
-        <OperandArray value="NotCountUnitStarportReactorQueuedOnlyAtUnit"/>
-        <OperandArray value="NotCountUnitStarportTechlabQueuedOnlyAtUnit"/>
-    </CRequirementAnd>
     <CRequirementNot id="NotCountUnitBarracksReactorQueuedOnlyAtUnit">
         <OperandArray index="0" value="CountUnitBarracksReactorQueuedOnlyAtUnit"/>
     </CRequirementNot>

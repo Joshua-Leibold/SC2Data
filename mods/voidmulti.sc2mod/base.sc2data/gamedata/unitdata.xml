@@ -144,7 +144,7 @@
         <GlossaryStrongArray index="1" value="Ultralisk"/>
         <GlossaryStrongArray index="2" value="HighTemplar"/>
         <GlossaryWeakArray index="2" value="Tempest"/>
-        <Speed value="1.875"/>
+        <Speed value="1.6015"/>
         <VisionHeight value="15"/>
     </CUnit>
     <CUnit id="BroodLordCocoon">
@@ -610,6 +610,8 @@
         <GlossaryWeakArray index="0" value="Thor"/>
         <GlossaryWeakArray index="1" value="Roach"/>
         <Attributes index="Light" value="1"/>
+        <LifeStart value="125"/>
+        <LifeMax value="125"/>
     </CUnit>
     <CUnit id="GhostAlternate" parent="Ghost">
         <EffectArray index="Create" value="MorphToGhostNova"/>
@@ -619,14 +621,13 @@
         <GlossaryCategory value=""/>
         <GlossaryWeakArray index="0" value="Marauder"/>
         <GlossaryWeakArray index="1" value="Zergling"/>
-        <Food value="-3"/>
+        <Food value="2"/>
     </CUnit>
     <CUnit id="GhostNova" parent="Ghost">
         <GlossaryCategory value=""/>
         <GlossaryWeakArray index="0" value="Marauder"/>
         <GlossaryWeakArray index="1" value="Zergling"/>
-        <Food value="-3"/>
-        <Attributes index="Light" value="0"/>
+        <Food value="2"/>
     </CUnit>
     <CUnit id="GhostAcademy">
         <CardLayouts index="0">
