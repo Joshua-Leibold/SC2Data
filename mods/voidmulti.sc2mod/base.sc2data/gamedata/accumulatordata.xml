@@ -33,7 +33,7 @@
         <Operation value="Divide"/>
     </CAccumulatorArithmetic>
     <CAccumulatorArithmetic id="CasterAttackRatePowerTimeWarp">
-        <Parameters value="0.5"/>
+        <Parameters value="0.6"/>
         <Parameters value="0">
             <AccumulatorArray value="CasterStackCountAddTimeWarp"/>
         </Parameters>

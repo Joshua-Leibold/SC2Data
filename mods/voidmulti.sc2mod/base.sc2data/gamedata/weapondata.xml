@@ -429,4 +429,7 @@
         <Range value="12"/>
         <AllowedMovement value="Moving"/>
     </CWeaponLegacy>
+    <CWeaponLegacy id="NeedleClaws">
+        <Period value="0.8"/>
+    </CWeaponLegacy>
 </Catalog>

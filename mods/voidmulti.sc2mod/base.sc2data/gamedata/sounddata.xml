@@ -2870,4 +2870,11 @@
         <EditorCategories value="Race:Zerg"/>
         <AssetArray File="Assets\Sounds\Zerg\Hybrid\Hybrid_StealStrengthCast0.wav" FacialGroup=""/>
     </CSound>
+    <CSound id="HighTemplar_PsionicStormLaunch2" parent="Spell">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="Assets\Sounds\Protoss\HighTemplar\HighTemplar_PsionicStormLaunch0.wav"/>
+        <OffsetFadeIn Volume="-96.000000"/>
+        <OffsetFadeIn Time="1500"/>
+        <Pitch value="-0.750000,-0.750000"/>
+    </CSound>
 </Catalog>

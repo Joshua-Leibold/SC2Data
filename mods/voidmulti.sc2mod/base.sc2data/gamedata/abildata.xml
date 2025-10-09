@@ -696,7 +696,6 @@
     <CAbilTransport id="MedivacTransport">
         <UnloadCargoEffect value="PurificationNovaTargettedCasterRB"/>
         <TargetFilters value="Visible;Self,Ally,Neutral,Enemy,Buried,UnderConstruction,Dead,Hidden"/>
-        <UnloadCargoBehavior value="UnloadAcquireTarget"/>
     </CAbilTransport>
     <CAbilMorph id="MorphBackToGateway">
         <InfoArray index="0">
@@ -823,7 +822,6 @@
     <CAbilTransport id="OverlordTransport">
         <CmdButtonArray index="Load" Requirements="UseSingleOverlordTransport"/>
         <UnloadCargoEffect value="PurificationNovaTargettedCasterRB"/>
-        <UnloadCargoBehavior value="UnloadAcquireTarget"/>
     </CAbilTransport>
     <CAbilEffectTarget id="ParasiticBomb">
         <Cost index="0">
@@ -1182,7 +1180,6 @@
         <Range value="5"/>
         <UnloadCargoEffect value="WarpPrismUnloadCargoSetEffect"/>
         <LoadCargoEffect value="WarpPrismLoadDummy"/>
-        <UnloadCargoBehavior value="UnloadAcquireTarget"/>
     </CAbilTransport>
     <CAbilEffectInstant id="VoidRaySwarmDamageBoostCancel">
         <Flags index="Transient" value="1"/>
@@ -1967,7 +1964,4 @@
             <Cooldown TimeUse="1"/>
         </Cost>
     </CAbilEffectInstant>
-    <CAbilEffectTarget id="CausticSpray">
-        <Flags index="BestUnit" value="0"/>
-    </CAbilEffectTarget>
 </Catalog>
